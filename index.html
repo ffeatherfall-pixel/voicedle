@@ -86,7 +86,7 @@
 </style>
 
 <div id="app">
-  <h2 class="sr-only">Voice practice community — submit and receive reading passages</h2>
+  <h2 class="sr-only">VOICEDLE</h2>
   <div class="flag-header"><div class="s1"></div><div class="s2"></div><div class="s3"></div><div class="s4"></div><div class="s5"></div></div>
   <div class="inner">
     <p class="site-title">Voice Practice</p>
@@ -100,7 +100,7 @@
 
     <div class="tab-row">
       <button class="tab-btn active" onclick="switchTab('practice')">Practice</button>
-      <button class="tab-btn" onclick="switchTab('submit')">Submit a passage</button>
+      <button class="tab-btn" onclick="switchTab('submit')">Submit</button>
     </div>
 
     <div class="panel active" id="panel-practice">
@@ -110,7 +110,6 @@
           <input type="checkbox" id="nsfw-optin" onchange="savePrefs()">
           <div>
             <div class="check-row-label">Include passages flagged as NSFW</div>
-            <div class="check-row-sub">Swearing, mature themes, or other adult content</div>
           </div>
         </label>
         <div class="goal-row">
@@ -127,7 +126,7 @@
 
       <div style="position:relative;">
         <div class="passage-card">
-          <p class="loading-state" id="loading-msg">Connecting to passage pool...</p>
+          <p class="loading-state" id="loading-msg">Connecting...</p>
           <p class="empty-state" id="empty-msg" style="display:none;"></p>
           <p class="passage-text" id="passage-text" style="display:none;"></p>
           <p class="passage-meta" id="passage-meta" style="display:none;"></p>
@@ -173,7 +172,6 @@
           <input type="checkbox" id="nsfw-flag">
           <div>
             <div class="check-row-label">Flag this passage as NSFW</div>
-            <div class="check-row-sub">Check this if the passage contains swearing, mature themes, or other adult content</div>
           </div>
         </label>
       </div>
